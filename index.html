@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cat Clicker Premium</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<h1>Cat Clicker Premium</h1>
+	<!--Thid div for the list of cats-->
+	<ul id="cat-list"></ul>	
+	<!--the below div for the image of the cat-->
+	<div id="cat">
+		<!--catname for h3-->
+		<h3 id="cat-name"></h3>
+		<!--To update click counts--> 
+		<div id="cat-click-count"></div>
+		<!--below image to update the cat pic-->
+		<img id="cat-image" src="" alt="cat-pic">
+	</div>
+	<button id="admin-button">Admin</button>
+	<div id="admin">
+		<form>
+			<fieldset>
+				<legend>Cat Details</legend>
+				<label for="name">Name : </label>
+				<input type="text" name="catName" for="name" id="admin-Cat-Name" class="admin-Cat-Name">
+				<label for="url">Image URL : </label>
+				<input type="text" name="url" for="url" id="admin-Cat-Url" class="admin-Cat-Url">
+				<label for="clicks">Click Count : </label>
+				<input type="text" name="clicks" for="clicks" id="admin-Cat-Clicks" class="admin-Cat-Clicks">
+			</fieldset>
+		</form>
+		<button id="admin-cancel">Cancel</button>
+		<button id="admin-save">Save</button>
+	</div>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
